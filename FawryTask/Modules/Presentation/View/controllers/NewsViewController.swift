@@ -38,6 +38,13 @@ class NewsViewController: BaseViewController {
         }))
     }
     
+    @IBAction func didPressUserProfile(_ sender: Any) {
+        showAlert(style: .alert, title: "", message: "Do you want to signOut?", tintColor: .blue, actions: .ok(handler: {
+            
+            self.dismiss(animated: true, completion: nil)
+            UserDefaults.standard.deleteUserData()
+        }), .cancel(handler: nil))
+    }
 }
 
 

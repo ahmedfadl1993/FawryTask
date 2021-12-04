@@ -48,9 +48,14 @@ class RegistrationViewController: BaseViewController {
         }))
         
         disposeBag.add(registrationViewModel.openNewsViewController.bind({ [weak self] navigateToHome in
+            guard let self = self else {
+                return
+            }
             if navigateToHome {
-                // todo navigate to home
                 debugPrint("Navigate to Home")
+                self.showAlert(style: .alert, title: "", message: "Succussfuly Registration You should go back to Login", tintColor: .blue, actions: .ok(handler: {
+                    self.navigationController?.popViewController(animated: true)
+                }),.cancel(handler: nil))
             }
         }))
         

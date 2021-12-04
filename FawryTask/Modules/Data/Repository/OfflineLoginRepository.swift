@@ -16,6 +16,8 @@ class OfflineLoginRepository: LoginRepositoryProtocol {
         }else {
             success()
         }
+        
+        CoreDataManager.fetchPersons()
     }
     
 }

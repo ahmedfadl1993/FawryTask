@@ -26,6 +26,7 @@
 		FB0E6B8F275BFB2E00586407 /* PageIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B8E275BFB2E00586407 /* PageIndex.swift */; };
 		FB0E6B93275BFC9000586407 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B92275BFC9000586407 /* BaseViewModel.swift */; };
 		FB0E6B97275C038D00586407 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B96275C038D00586407 /* UserDefaults+Extensions.swift */; };
+		FB0E6B9A275C0ABF00586407 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B99275C0ABF00586407 /* Alertable.swift */; };
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
 		FB221E50275A88C0000A446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221E4F275A88C0000A446B /* Assets.xcassets */; };
 		FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E51275A88C0000A446B /* LaunchScreen.storyboard */; };
@@ -73,6 +74,7 @@
 		FB0E6B8E275BFB2E00586407 /* PageIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndex.swift; sourceTree = "<group>"; };
 		FB0E6B92275BFC9000586407 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		FB0E6B96275C038D00586407 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		FB0E6B99275C0ABF00586407 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		FB221E40275A88BF000A446B /* FawryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FawryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221E43275A88BF000A446B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB221E4F275A88C0000A446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +213,14 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		FB0E6B98275C09D600586407 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB0E6B99275C0ABF00586407 /* Alertable.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		FB221E37275A88BF000A446B = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +328,7 @@
 		FB43A407275B50E700719757 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FB0E6B98275C09D600586407 /* CustomViews */,
 				FB0E6B8D275BFB1900586407 /* Enums */,
 				FB43A401275B4F2100719757 /* Bindables.swift */,
 				FB43A403275B501F00719757 /* Validatable.swift */,
@@ -500,6 +511,7 @@
 				FB0D9198275B609900BF62E5 /* RegistrationViewModel.swift in Sources */,
 				FB83F77E275BB5ED00CCA61C /* BaseViewController.swift in Sources */,
 				FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */,
+				FB0E6B9A275C0ABF00586407 /* Alertable.swift in Sources */,
 				FBCD7F26275BA01400A97E83 /* OfflineLoginRepository.swift in Sources */,
 				FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */,
 				FB0E6B83275BE5FD00586407 /* NewsCollectionViewCell.swift in Sources */,

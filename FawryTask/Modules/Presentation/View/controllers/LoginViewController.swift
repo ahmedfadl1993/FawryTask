@@ -63,7 +63,7 @@ class LoginViewController: BaseViewController {
             if navigateToHome {
                 self.navigateToHome(self)
             }else {
-                
+                self.showAlert(style: .alert, title: "", message: "Something went wrong", tintColor: .blue, actions: .cancel(handler: nil))
             }
         }))
     }

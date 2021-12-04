@@ -34,9 +34,10 @@
                                 <constraint firstAttribute="width" constant="30" id="RAf-93-FnZ"/>
                                 <constraint firstAttribute="height" constant="30" id="vUj-uu-YK2"/>
                             </constraints>
-                            <state key="normal" image="usericon"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="person" catalog="system"/>
                             <connections>
-                                <action selector="didPressChangeLanguage:" destination="oet-Lo-oBp" eventType="touchUpInside" id="B2B-A3-U78"/>
+                                <action selector="didPressUserProfile:" destination="-1" eventType="touchUpInside" id="gLF-1V-qa4"/>
                             </connections>
                         </button>
                     </subviews>
@@ -87,7 +88,7 @@
         </view>
     </objects>
     <resources>
-        <image name="usericon" width="18" height="18"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
