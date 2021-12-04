@@ -6,5 +6,7 @@ target 'FawryTask' do
   use_frameworks!
 
   # Pods for FawryTask
+  
+  pod 'Alamofire'
 
 end

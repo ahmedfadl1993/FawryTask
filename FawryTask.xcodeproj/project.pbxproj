@@ -30,8 +30,16 @@
 		FB43A402275B4F2100719757 /* Bindables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A401275B4F2100719757 /* Bindables.swift */; };
 		FB43A404275B501F00719757 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A403275B501F00719757 /* Validatable.swift */; };
 		FB83F77E275BB5ED00CCA61C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */; };
+		FB9A0304275BD21F00D508A8 /* PicsImagesRepoisotry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0303275BD21F00D508A8 /* PicsImagesRepoisotry.swift */; };
+		FB9A0306275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0305275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift */; };
+		FB9A0309275BD30E00D508A8 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0308275BD30E00D508A8 /* NewsModel.swift */; };
 		FBCD7F24275B9FCF00A97E83 /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */; };
 		FBCD7F26275BA01400A97E83 /* OfflineLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */; };
+		FBDC4743275BBCFA00589946 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC473E275BBCFA00589946 /* APIs.swift */; };
+		FBDC474D275BBD2100589946 /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC474B275BBD2100589946 /* APIFetcher.swift */; };
+		FBDC4755275BC14F00589946 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC4754275BC14F00589946 /* BaseRequest.swift */; };
+		FBDC4759275BC99200589946 /* ErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC4758275BC99200589946 /* ErrorResponseModel.swift */; };
+		FBDC475B275BCEA700589946 /* PicsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC475A275BCEA700589946 /* PicsRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,8 +70,16 @@
 		FB43A401275B4F2100719757 /* Bindables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindables.swift; sourceTree = "<group>"; };
 		FB43A403275B501F00719757 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FB9A0303275BD21F00D508A8 /* PicsImagesRepoisotry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsImagesRepoisotry.swift; sourceTree = "<group>"; };
+		FB9A0305275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsImagesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FB9A0308275BD30E00D508A8 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLoginRepository.swift; sourceTree = "<group>"; };
+		FBDC473E275BBCFA00589946 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		FBDC474B275BBD2100589946 /* APIFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
+		FBDC4754275BC14F00589946 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		FBDC4758275BC99200589946 /* ErrorResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseModel.swift; sourceTree = "<group>"; };
+		FBDC475A275BCEA700589946 /* PicsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +171,7 @@
 			children = (
 				FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */,
 				FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */,
+				FB9A0305275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift */,
 			);
 			path = RepoistoryProtocol;
 			sourceTree = "<group>";
@@ -231,6 +248,8 @@
 		FB2B3FF2275B978A009F71AE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FB9A0307275BD2EF00D508A8 /* Entity */,
+				FBDC473C275BBC9F00589946 /* Data Access */,
 				FB2B3FF3275B9794009F71AE /* Repository */,
 			);
 			path = Data;
@@ -241,6 +260,7 @@
 			children = (
 				FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */,
 				FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */,
+				FB9A0303275BD21F00D508A8 /* PicsImagesRepoisotry.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -273,6 +293,42 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		FB9A0307275BD2EF00D508A8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC4758275BC99200589946 /* ErrorResponseModel.swift */,
+				FB9A0308275BD30E00D508A8 /* NewsModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FBDC473C275BBC9F00589946 /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC4753275BBD5D00589946 /* ServiceManager */,
+				FBDC4751275BBD2A00589946 /* Request */,
+				FBDC473E275BBCFA00589946 /* APIs.swift */,
+			);
+			path = "Data Access";
+			sourceTree = "<group>";
+		};
+		FBDC4751275BBD2A00589946 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC4754275BC14F00589946 /* BaseRequest.swift */,
+				FBDC475A275BCEA700589946 /* PicsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		FBDC4753275BBD5D00589946 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				FBDC474B275BBD2100589946 /* APIFetcher.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +340,7 @@
 				FB221E3C275A88BF000A446B /* Sources */,
 				FB221E3D275A88BF000A446B /* Frameworks */,
 				FB221E3E275A88BF000A446B /* Resources */,
+				E69A7C8968377CB59142C8D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +421,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E69A7C8968377CB59142C8D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FawryTask/Pods-FawryTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FawryTask/Pods-FawryTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FawryTask/Pods-FawryTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -371,9 +445,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9A0309275BD30E00D508A8 /* NewsModel.swift in Sources */,
 				FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */,
+				FBDC4743275BBCFA00589946 /* APIs.swift in Sources */,
+				FB9A0304275BD21F00D508A8 /* PicsImagesRepoisotry.swift in Sources */,
+				FBDC474D275BBD2100589946 /* APIFetcher.swift in Sources */,
 				FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */,
 				FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */,
+				FBDC4759275BC99200589946 /* ErrorResponseModel.swift in Sources */,
 				FBCD7F24275B9FCF00A97E83 /* LoginRepositoryProtocol.swift in Sources */,
 				FB0D9198275B609900BF62E5 /* RegistrationViewModel.swift in Sources */,
 				FB83F77E275BB5ED00CCA61C /* BaseViewController.swift in Sources */,
@@ -382,6 +461,7 @@
 				FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */,
 				FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */,
 				FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */,
+				FBDC4755275BC14F00589946 /* BaseRequest.swift in Sources */,
 				FB0D919B275B619100BF62E5 /* UserloginCoreData.xcdatamodeld in Sources */,
 				FB0D91C6275B77B000BF62E5 /* RegisrtaionProtocol.swift in Sources */,
 				FB0D9196275B5E1F00BF62E5 /* RegistrationViewController.swift in Sources */,
@@ -390,6 +470,8 @@
 				FB43A402275B4F2100719757 /* Bindables.swift in Sources */,
 				FB0D919F275B646200BF62E5 /* Person.swift in Sources */,
 				FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */,
+				FBDC475B275BCEA700589946 /* PicsRequest.swift in Sources */,
+				FB9A0306275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift in Sources */,
 				FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

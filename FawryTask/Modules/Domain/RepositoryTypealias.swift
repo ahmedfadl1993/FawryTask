@@ -9,3 +9,5 @@ import Foundation
 
 typealias Failure = (_ errorMessage: String) -> Void
 typealias Success = () -> Void
+
+//typealias FSMessagesCompletion = (_ channels: [MessageDocument]) -> Void
