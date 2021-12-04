@@ -29,6 +29,8 @@ class LoginViewModel: Validatable {
             // Todo save to userdefaults
             // redirect to homeview controller
             
+            UserDefaults.standard.save(isLoggedIn: true)
+            
         } failure: { [weak self] errorMessage in
             guard let self = self else {
                 return

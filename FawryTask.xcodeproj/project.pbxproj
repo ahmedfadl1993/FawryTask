@@ -25,6 +25,7 @@
 		FB0E6B8C275BF26C00586407 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B8B275BF26C00586407 /* Array+extension.swift */; };
 		FB0E6B8F275BFB2E00586407 /* PageIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B8E275BFB2E00586407 /* PageIndex.swift */; };
 		FB0E6B93275BFC9000586407 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B92275BFC9000586407 /* BaseViewModel.swift */; };
+		FB0E6B97275C038D00586407 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B96275C038D00586407 /* UserDefaults+Extensions.swift */; };
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
 		FB221E50275A88C0000A446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221E4F275A88C0000A446B /* Assets.xcassets */; };
 		FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E51275A88C0000A446B /* LaunchScreen.storyboard */; };
@@ -32,7 +33,6 @@
 		FB221E70275AB614000A446B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E6F275AB614000A446B /* LoginViewController.swift */; };
 		FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */; };
 		FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */; };
-		FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3CC275ABFCE00719757 /* AppController.swift */; };
 		FB43A3F6275ADF1C00719757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB43A3F5275ADF1C00719757 /* Main.storyboard */; };
 		FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3FD275AE11B00719757 /* SceneDelegate.swift */; };
 		FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3FF275B4D2300719757 /* LoginViewModel.swift */; };
@@ -72,6 +72,7 @@
 		FB0E6B8B275BF26C00586407 /* Array+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+extension.swift"; sourceTree = "<group>"; };
 		FB0E6B8E275BFB2E00586407 /* PageIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndex.swift; sourceTree = "<group>"; };
 		FB0E6B92275BFC9000586407 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		FB0E6B96275C038D00586407 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		FB221E40275A88BF000A446B /* FawryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FawryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221E43275A88BF000A446B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB221E4F275A88C0000A446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		FB221E6F275AB614000A446B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineRegisrtaionRepoistory.swift; sourceTree = "<group>"; };
-		FB43A3CC275ABFCE00719757 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		FB43A3F5275ADF1C00719757 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FB43A3FD275AE11B00719757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB43A3FF275B4D2300719757 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -214,7 +214,6 @@
 		FB221E37275A88BF000A446B = {
 			isa = PBXGroup;
 			children = (
-				FB43A3CC275ABFCE00719757 /* AppController.swift */,
 				FB221E42275A88BF000A446B /* FawryTask */,
 				FB221E41275A88BF000A446B /* Products */,
 				249C81AA8D37E0257B277322 /* Pods */,
@@ -324,6 +323,7 @@
 				FB43A403275B501F00719757 /* Validatable.swift */,
 				FB0E6B89275BEA7E00586407 /* UICollectionViewCell+Extenstion.swift */,
 				FB0E6B8B275BF26C00586407 /* Array+extension.swift */,
+				FB0E6B96275C038D00586407 /* UserDefaults+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -492,6 +492,7 @@
 				FB9A0304275BD21F00D508A8 /* NewsRepoisotry.swift in Sources */,
 				FBDC474D275BBD2100589946 /* APIFetcher.swift in Sources */,
 				FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */,
+				FB0E6B97275C038D00586407 /* UserDefaults+Extensions.swift in Sources */,
 				FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */,
 				FBDC4759275BC99200589946 /* ErrorResponseModel.swift in Sources */,
 				FBCD7F24275B9FCF00A97E83 /* LoginRepositoryProtocol.swift in Sources */,
@@ -516,7 +517,6 @@
 				FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */,
 				FBDC475B275BCEA700589946 /* PicsRequest.swift in Sources */,
 				FB9A0306275BD24000D508A8 /* NewsRepoisotryProtocol.swift in Sources */,
-				FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,7 +663,6 @@
 				INFOPLIST_FILE = FawryTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -693,7 +692,6 @@
 				INFOPLIST_FILE = FawryTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

@@ -17,6 +17,10 @@ class LoginViewController: BaseViewController {
     // MARK: - Controller Variables
     private var viewModel: LoginViewModel!
     override func viewDidLoad() {
+        if UserDefaults.standard.isUserloggedIn() {
+            navigateToHome(self)
+            return
+        }
         viewModel = LoginViewModel(loginRepository: OfflineLoginRepository())
         super.viewDidLoad()
         errorMessageView.isHidden = true
@@ -24,16 +28,18 @@ class LoginViewController: BaseViewController {
     
     // MARK: - Actions
     @IBAction func didPressLoginButton(_ sender: UIButton) {
-//        viewModel.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "")
-        
-        let newViewController = NewsViewController()
-        newViewController.modalPresentationStyle = .overFullScreen
-        self.present(newViewController, animated: true, completion: nil)
+        viewModel.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "")
     }
     
     @IBAction func didPressSignupButton(_ sender: UIButton) {
         let regViewController = RegistrationViewController()
         self.navigationController?.pushViewController(regViewController, animated: true)
+    }
+    
+    fileprivate func navigateToHome(_ self: LoginViewController) {
+        let newViewController = NewsViewController()
+        newViewController.modalPresentationStyle = .overFullScreen
+        self.present(newViewController, animated: true, completion: nil)
     }
     
     override func observeBindables() {
@@ -55,7 +61,7 @@ class LoginViewController: BaseViewController {
                 return
             }
             if navigateToHome {
-                
+                self.navigateToHome(self)
             }else {
                 
             }
