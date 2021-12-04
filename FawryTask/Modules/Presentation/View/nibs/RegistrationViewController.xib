@@ -111,7 +111,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1N-KU-qPP" userLabel="Password Text Field">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="30"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
                                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <color key="tintColor" name="OceanBlue"/>
                                                                             <constraints>
@@ -121,23 +121,9 @@
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                                                         </textField>
-                                                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-iO-nOc">
-                                                                            <rect key="frame" x="320" y="0.0" width="25" height="30"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="25" id="hmb-Eq-hJl"/>
-                                                                            </constraints>
-                                                                            <state key="normal" image="showpass_selected"/>
-                                                                            <state key="selected" image="showpass_unselected"/>
-                                                                            <connections>
-                                                                                <action selector="showHidePasswordButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="MPj-wD-Sd7"/>
-                                                                            </connections>
-                                                                        </button>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstItem="xdR-iO-nOc" firstAttribute="leading" secondItem="o1N-KU-qPP" secondAttribute="trailing" constant="2" id="QIJ-fp-TP1"/>
                                                                         <constraint firstItem="o1N-KU-qPP" firstAttribute="leading" secondItem="jWx-UI-HIY" secondAttribute="leading" id="be7-FL-GXl"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="xdR-iO-nOc" secondAttribute="bottom" id="c69-Oq-ULx"/>
-                                                                        <constraint firstItem="xdR-iO-nOc" firstAttribute="top" secondItem="jWx-UI-HIY" secondAttribute="top" id="fmi-ju-QGb"/>
                                                                     </constraints>
                                                                 </stackView>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GL-mS-muE">
@@ -156,7 +142,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
                                                                     <subviews>
                                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-6l-lfN" userLabel="Password Text Field">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="318" height="30"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
                                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <color key="tintColor" name="OceanBlue"/>
                                                                             <constraints>
@@ -166,23 +152,9 @@
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                                                         </textField>
-                                                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFK-4y-Kmw">
-                                                                            <rect key="frame" x="320" y="0.0" width="25" height="30"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="25" id="lNp-Qx-RWq"/>
-                                                                            </constraints>
-                                                                            <state key="normal" image="showpass_selected"/>
-                                                                            <state key="selected" image="showpass_unselected"/>
-                                                                            <connections>
-                                                                                <action selector="showHideConfirmButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="pqU-bq-udj"/>
-                                                                            </connections>
-                                                                        </button>
                                                                     </subviews>
                                                                     <constraints>
                                                                         <constraint firstItem="VrY-6l-lfN" firstAttribute="leading" secondItem="Rup-YI-AxK" secondAttribute="leading" id="5Is-U7-rTx"/>
-                                                                        <constraint firstItem="UFK-4y-Kmw" firstAttribute="leading" secondItem="VrY-6l-lfN" secondAttribute="trailing" constant="2" id="A1H-RP-NZd"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="UFK-4y-Kmw" secondAttribute="bottom" id="CDd-jc-PRS"/>
-                                                                        <constraint firstItem="UFK-4y-Kmw" firstAttribute="top" secondItem="Rup-YI-AxK" secondAttribute="top" id="FkY-Hk-D3P"/>
                                                                     </constraints>
                                                                 </stackView>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRl-36-tdP">
@@ -319,8 +291,6 @@
     </objects>
     <resources>
         <image name="logo" width="224" height="224"/>
-        <image name="showpass_selected" width="25" height="16.5"/>
-        <image name="showpass_unselected" width="25" height="16.5"/>
         <namedColor name="DarkishPurple">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

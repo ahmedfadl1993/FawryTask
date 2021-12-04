@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				FB2B3FF2275B978A009F71AE /* Data */,
-				FB0D91C0275B761F00BF62E5 /* Presentation */,
 				FB0D91BF275B761900BF62E5 /* Domain */,
+				FB0D91C0275B761F00BF62E5 /* Presentation */,
 			);
 			path = Modules;
 			sourceTree = "<group>";

@@ -36,6 +36,7 @@ class RegistrationViewController: UIViewController {
     }
     
     func observeBindables() {
+        
         disposeBag.add(registrationViewModel.validationError.bind({ [weak self] errorMessage in
             guard let self = self else {
                 return
@@ -47,15 +48,13 @@ class RegistrationViewController: UIViewController {
             self.errorMessageView.isHidden = false
             self.errorMessageLabel.text = errorMessage
         }))
-    }
-    
-    @IBAction func showHidePasswordButtonAction(sender: UIButton) {
-        passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
-        sender.isSelected = !passwordTextField.isSecureTextEntry
-    }
-    
-    @IBAction func showHideConfirmButtonAction(sender: UIButton) {
-        confirmPasswordTextField.isSecureTextEntry = !confirmPasswordTextField.isSecureTextEntry
-        sender.isSelected = !confirmPasswordTextField.isSecureTextEntry
+        
+        disposeBag.add(registrationViewModel.openNewsViewController.bind({ [weak self] navigateToHome in
+            if navigateToHome {
+                // todo navigate to home
+                debugPrint("Navigate to Home")
+            }
+        }))
+        
     }
 }

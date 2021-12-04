@@ -10,6 +10,8 @@ import Foundation
 class RegistrationViewModel: Validatable {
     
     private(set) var validationError = Bindable<String?>(nil)
+    private(set) var openNewsViewController = Bindable<Bool>(false)
+
     private var repoistory: RegisrtaionProtocol!
     
     init (repoistory: RegisrtaionProtocol) {
@@ -28,10 +30,16 @@ class RegistrationViewModel: Validatable {
             validationError.value = "The passwords you have entered don't match."
             return
         }else {
-            repoistory.signUp(email: email, password: password) {
-                print("Success")
-            } failure: { errorMessage in
-                print("errorrrrr : \(errorMessage)")
+            repoistory.signUp(email: email, password: password) { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                self.openNewsViewController.value = true
+            } failure: { [weak self] errorMessage in
+                guard let self = self else {
+                    return
+                }
+                self.validationError.value = errorMessage
             }
         }
 
