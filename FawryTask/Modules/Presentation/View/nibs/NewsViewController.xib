@@ -25,7 +25,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fawry News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EE-Pm-whT">
                             <rect key="frame" x="15" y="15.5" width="99" height="20.5"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" red="0.050980392159999999" green="0.42352941179999998" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-pn-aot">
@@ -40,7 +40,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.98431372549999996" green="0.83137254900000002" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.050980392159999999" green="0.42352941179999998" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="2EE-Pm-whT" firstAttribute="centerY" secondItem="MQz-V3-TLK" secondAttribute="centerY" id="166-kx-3kT"/>
                         <constraint firstItem="wrb-pn-aot" firstAttribute="centerY" secondItem="MQz-V3-TLK" secondAttribute="centerY" id="4aI-dQ-8m0"/>
@@ -49,27 +49,39 @@
                         <constraint firstAttribute="height" constant="51" id="xbY-uf-zAn"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gmm-rp-DaZ">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="102-ci-Pow">
                     <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gmm-rp-DaZ">
+                            <rect key="frame" x="10" y="10" width="394" height="747"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r2T-Dx-XPQ">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r2T-Dx-XPQ">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                    <constraints>
+                        <constraint firstItem="Gmm-rp-DaZ" firstAttribute="top" secondItem="102-ci-Pow" secondAttribute="top" constant="10" id="0Ox-5W-yUV"/>
+                        <constraint firstItem="Gmm-rp-DaZ" firstAttribute="leading" secondItem="102-ci-Pow" secondAttribute="leading" constant="10" id="Oum-Ep-ZzT"/>
+                        <constraint firstAttribute="bottom" secondItem="Gmm-rp-DaZ" secondAttribute="bottom" constant="10" id="kfQ-NC-WbD"/>
+                        <constraint firstAttribute="trailing" secondItem="Gmm-rp-DaZ" secondAttribute="trailing" constant="10" id="ux4-V6-ibv"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="ccd-2R-lF3"/>
-            <color key="backgroundColor" red="0.98431372549999996" green="0.83137254900000002" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.050980392159999999" green="0.42352941179999998" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Gmm-rp-DaZ" firstAttribute="top" secondItem="MQz-V3-TLK" secondAttribute="bottom" id="0UM-We-m8r"/>
                 <constraint firstItem="MQz-V3-TLK" firstAttribute="trailing" secondItem="ccd-2R-lF3" secondAttribute="trailing" id="2ej-fB-5lp"/>
-                <constraint firstItem="Gmm-rp-DaZ" firstAttribute="leading" secondItem="ccd-2R-lF3" secondAttribute="leading" id="F0Y-NJ-p2O"/>
+                <constraint firstItem="102-ci-Pow" firstAttribute="bottom" secondItem="ccd-2R-lF3" secondAttribute="bottom" id="8c7-OP-KMR"/>
                 <constraint firstItem="MQz-V3-TLK" firstAttribute="top" secondItem="ccd-2R-lF3" secondAttribute="top" id="FiD-eR-IoJ"/>
-                <constraint firstItem="ccd-2R-lF3" firstAttribute="trailing" secondItem="Gmm-rp-DaZ" secondAttribute="trailing" id="Jv7-yu-5ee"/>
+                <constraint firstItem="102-ci-Pow" firstAttribute="leading" secondItem="ccd-2R-lF3" secondAttribute="leading" id="VXr-W1-v5U"/>
                 <constraint firstItem="MQz-V3-TLK" firstAttribute="leading" secondItem="ccd-2R-lF3" secondAttribute="leading" id="Wko-Gr-HfN"/>
-                <constraint firstItem="ccd-2R-lF3" firstAttribute="bottom" secondItem="Gmm-rp-DaZ" secondAttribute="bottom" id="rx1-I2-4Jr"/>
+                <constraint firstItem="102-ci-Pow" firstAttribute="trailing" secondItem="ccd-2R-lF3" secondAttribute="trailing" id="i43-dP-TnF"/>
+                <constraint firstItem="102-ci-Pow" firstAttribute="top" secondItem="MQz-V3-TLK" secondAttribute="bottom" id="rN4-8X-WZB"/>
             </constraints>
             <point key="canvasLocation" x="-620.28985507246387" y="10.714285714285714"/>
         </view>

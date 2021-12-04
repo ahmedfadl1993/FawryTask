@@ -19,6 +19,10 @@
 		FB0E6B7B275BD7A000586407 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B7A275BD7A000586407 /* NewsViewModel.swift */; };
 		FB0E6B7D275BD84400586407 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0E6B7C275BD84400586407 /* NewsViewController.xib */; };
 		FB0E6B7F275BD85200586407 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B7E275BD85200586407 /* NewsViewController.swift */; };
+		FB0E6B83275BE5FD00586407 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B81275BE5FD00586407 /* NewsCollectionViewCell.swift */; };
+		FB0E6B84275BE5FD00586407 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0E6B82275BE5FD00586407 /* NewsCollectionViewCell.xib */; };
+		FB0E6B8A275BEA7E00586407 /* UICollectionViewCell+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B89275BEA7E00586407 /* UICollectionViewCell+Extenstion.swift */; };
+		FB0E6B8C275BF26C00586407 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B8B275BF26C00586407 /* Array+extension.swift */; };
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
 		FB221E50275A88C0000A446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221E4F275A88C0000A446B /* Assets.xcassets */; };
 		FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E51275A88C0000A446B /* LaunchScreen.storyboard */; };
@@ -60,6 +64,10 @@
 		FB0E6B7A275BD7A000586407 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		FB0E6B7C275BD84400586407 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		FB0E6B7E275BD85200586407 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		FB0E6B81275BE5FD00586407 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB0E6B82275BE5FD00586407 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		FB0E6B89275BEA7E00586407 /* UICollectionViewCell+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extenstion.swift"; sourceTree = "<group>"; };
+		FB0E6B8B275BF26C00586407 /* Array+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+extension.swift"; sourceTree = "<group>"; };
 		FB221E40275A88BF000A446B /* FawryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FawryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221E43275A88BF000A446B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB221E4F275A88C0000A446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +190,15 @@
 			path = RepoistoryProtocol;
 			sourceTree = "<group>";
 		};
+		FB0E6B80275BE5E700586407 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB0E6B81275BE5FD00586407 /* NewsCollectionViewCell.swift */,
+				FB0E6B82275BE5FD00586407 /* NewsCollectionViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		FB221E37275A88BF000A446B = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +233,7 @@
 		FB221E5B275AAFB0000A446B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FB0E6B80275BE5E700586407 /* cells */,
 				FB43A3F5275ADF1C00719757 /* Main.storyboard */,
 				FB221E5C275AAFBF000A446B /* controllers */,
 				FB221E5F275AB014000A446B /* nibs */,
@@ -290,6 +308,8 @@
 			children = (
 				FB43A401275B4F2100719757 /* Bindables.swift */,
 				FB43A403275B501F00719757 /* Validatable.swift */,
+				FB0E6B89275BEA7E00586407 /* UICollectionViewCell+Extenstion.swift */,
+				FB0E6B8B275BF26C00586407 /* Array+extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -395,6 +415,7 @@
 				FB0E6B7D275BD84400586407 /* NewsViewController.xib in Resources */,
 				FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */,
 				FB221E50275A88C0000A446B /* Assets.xcassets in Resources */,
+				FB0E6B84275BE5FD00586407 /* NewsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9A0309275BD30E00D508A8 /* NewsModel.swift in Sources */,
+				FB0E6B8A275BEA7E00586407 /* UICollectionViewCell+Extenstion.swift in Sources */,
 				FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */,
 				FBDC4743275BBCFA00589946 /* APIs.swift in Sources */,
 				FB0E6B7F275BD85200586407 /* NewsViewController.swift in Sources */,
@@ -463,9 +485,11 @@
 				FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */,
 				FBCD7F26275BA01400A97E83 /* OfflineLoginRepository.swift in Sources */,
 				FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */,
+				FB0E6B83275BE5FD00586407 /* NewsCollectionViewCell.swift in Sources */,
 				FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */,
 				FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */,
 				FBDC4755275BC14F00589946 /* BaseRequest.swift in Sources */,
+				FB0E6B8C275BF26C00586407 /* Array+extension.swift in Sources */,
 				FB0D919B275B619100BF62E5 /* UserloginCoreData.xcdatamodeld in Sources */,
 				FB0D91C6275B77B000BF62E5 /* RegisrtaionProtocol.swift in Sources */,
 				FB0D9196275B5E1F00BF62E5 /* RegistrationViewController.swift in Sources */,

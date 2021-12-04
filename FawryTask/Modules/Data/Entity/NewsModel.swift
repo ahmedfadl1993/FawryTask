@@ -8,12 +8,11 @@
 import Foundation
 
 struct NewsModel: Codable {
-    let id, author: String
-    let width, height: Int
-    let url, downloadURL: String
+    var author: String
+    var url, downloadURL: String
 
     enum CodingKeys: String, CodingKey {
-        case id, author, width, height, url
+        case author, url
         case downloadURL = "download_url"
   
     }

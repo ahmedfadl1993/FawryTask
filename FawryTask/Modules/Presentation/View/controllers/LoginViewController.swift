@@ -27,6 +27,7 @@ class LoginViewController: BaseViewController {
 //        viewModel.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "")
         
         let newViewController = NewsViewController()
+        newViewController.modalPresentationStyle = .overFullScreen
         self.present(newViewController, animated: true, completion: nil)
     }
     
