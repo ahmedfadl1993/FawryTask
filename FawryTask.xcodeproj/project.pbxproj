@@ -29,6 +29,9 @@
 		FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3FF275B4D2300719757 /* LoginViewModel.swift */; };
 		FB43A402275B4F2100719757 /* Bindables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A401275B4F2100719757 /* Bindables.swift */; };
 		FB43A404275B501F00719757 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A403275B501F00719757 /* Validatable.swift */; };
+		FB83F77E275BB5ED00CCA61C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */; };
+		FBCD7F24275B9FCF00A97E83 /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */; };
+		FBCD7F26275BA01400A97E83 /* OfflineLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		FB43A3FF275B4D2300719757 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FB43A401275B4F2100719757 /* Bindables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindables.swift; sourceTree = "<group>"; };
 		FB43A403275B501F00719757 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLoginRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */,
+				FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */,
 			);
 			path = RepoistoryProtocol;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 			children = (
 				FB221E6F275AB614000A446B /* LoginViewController.swift */,
 				FB0D9195275B5E1F00BF62E5 /* RegistrationViewController.swift */,
+				FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */,
+				FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -365,8 +374,11 @@
 				FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */,
 				FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */,
 				FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */,
+				FBCD7F24275B9FCF00A97E83 /* LoginRepositoryProtocol.swift in Sources */,
 				FB0D9198275B609900BF62E5 /* RegistrationViewModel.swift in Sources */,
+				FB83F77E275BB5ED00CCA61C /* BaseViewController.swift in Sources */,
 				FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */,
+				FBCD7F26275BA01400A97E83 /* OfflineLoginRepository.swift in Sources */,
 				FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */,
 				FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */,
 				FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */,

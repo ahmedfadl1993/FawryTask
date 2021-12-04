@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: BaseViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -18,14 +18,12 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var errorMessageView: UIView!
     
     var registrationViewModel: RegistrationViewModel!
-    var disposeBag = DisposableBag()
 
     
     override func viewDidLoad() {
+        registrationViewModel = RegistrationViewModel(repoistory: OfflineRegisrtaionRepoistory())
         super.viewDidLoad()
         errorMessageView.isHidden = true
-        registrationViewModel = RegistrationViewModel(repoistory: OfflineRegisrtaionRepoistory())
-        observeBindables()
         passwordTextField.autocorrectionType = .no
         confirmPasswordTextField.autocorrectionType = .no
     }
@@ -35,7 +33,7 @@ class RegistrationViewController: UIViewController {
         registrationViewModel.signUp(email: usernameTextField.text ?? "", password: passwordTextField.text ?? "" , confirmPassword: confirmPasswordTextField.text ?? "")
     }
     
-    func observeBindables() {
+    override func observeBindables() {
         
         disposeBag.add(registrationViewModel.validationError.bind({ [weak self] errorMessage in
             guard let self = self else {

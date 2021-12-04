@@ -47,7 +47,7 @@ class CoreDataManager {
                                                          into: context) as! Person
         
         person.email = email
-        person.email = password
+        person.password = password
         saveContext {
             success()
         } failure: { errorMessage in
@@ -67,4 +67,16 @@ class CoreDataManager {
         }
     }
     
+    static func fetchPersonBy(email: String, password: String) -> [Person]{
+            let fetchRequest = NSFetchRequest<Person>(entityName: "Person")
+            fetchRequest.predicate = NSPredicate(format: "email = %@ && password = %@", email, password)
+            
+            do {
+                let results = try context.fetch(fetchRequest)
+               return results
+            }catch {
+                print(error.localizedDescription)
+                return []
+            }
+        }
 }
