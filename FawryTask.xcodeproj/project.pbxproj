@@ -14,7 +14,6 @@
 		FB0D919F275B646200BF62E5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D919E275B646200BF62E5 /* Person.swift */; };
 		FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91AC275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift */; };
 		FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91AD275B66D300BF62E5 /* JSONDecoder+Extension.swift */; };
-		FB0D91C3275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C2275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift */; };
 		FB0D91C6275B77B000BF62E5 /* RegisrtaionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */; };
 		FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C7275B784900BF62E5 /* RepositoryTypealias.swift */; };
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
@@ -25,6 +24,7 @@
 		FB221E70275AB614000A446B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E6F275AB614000A446B /* LoginViewController.swift */; };
 		FB221E74275ABA3F000A446B /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E73275ABA3F000A446B /* PasswordViewController.swift */; };
 		FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */; };
+		FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */; };
 		FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3CC275ABFCE00719757 /* AppController.swift */; };
 		FB43A3F6275ADF1C00719757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB43A3F5275ADF1C00719757 /* Main.storyboard */; };
 		FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3FD275AE11B00719757 /* SceneDelegate.swift */; };
@@ -43,7 +43,6 @@
 		FB0D919E275B646200BF62E5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FB0D91AC275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Extension.swift"; sourceTree = "<group>"; };
 		FB0D91AD275B66D300BF62E5 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
-		FB0D91C2275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineRegisrtaionRepoistory.swift; sourceTree = "<group>"; };
 		FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisrtaionProtocol.swift; sourceTree = "<group>"; };
 		FB0D91C7275B784900BF62E5 /* RepositoryTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTypealias.swift; sourceTree = "<group>"; };
 		FB221E40275A88BF000A446B /* FawryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FawryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +55,7 @@
 		FB221E6F275AB614000A446B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB221E73275ABA3F000A446B /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineRegisrtaionRepoistory.swift; sourceTree = "<group>"; };
 		FB43A3CC275ABFCE00719757 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		FB43A3F5275ADF1C00719757 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FB43A3FD275AE11B00719757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,19 +123,11 @@
 		FB0D91BD275B760C00BF62E5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FB2B3FF2275B978A009F71AE /* Data */,
 				FB0D91C0275B761F00BF62E5 /* Presentation */,
 				FB0D91BF275B761900BF62E5 /* Domain */,
-				FB0D91BE275B761500BF62E5 /* Data */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		FB0D91BE275B761500BF62E5 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				FB0D91C1275B764F00BF62E5 /* Repository */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		FB0D91BF275B761900BF62E5 /* Domain */ = {
@@ -154,14 +146,6 @@
 				FB221E5B275AAFB0000A446B /* View */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		FB0D91C1275B764F00BF62E5 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				FB0D91C2275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift */,
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		FB0D91C4275B778A00BF62E5 /* RepoistoryProtocol */ = {
@@ -247,6 +231,22 @@
 			children = (
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		FB2B3FF2275B978A009F71AE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B3FF3275B9794009F71AE /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB2B3FF3275B9794009F71AE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		FB43A406275B50D600719757 /* App */ = {
@@ -374,6 +374,7 @@
 				FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */,
 				FB0D9198275B609900BF62E5 /* RegistrationViewModel.swift in Sources */,
 				FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */,
+				FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */,
 				FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */,
 				FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */,
 				FB0D919B275B619100BF62E5 /* UserloginCoreData.xcdatamodeld in Sources */,
@@ -384,7 +385,6 @@
 				FB43A402275B4F2100719757 /* Bindables.swift in Sources */,
 				FB0D919F275B646200BF62E5 /* Person.swift in Sources */,
 				FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */,
-				FB0D91C3275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift in Sources */,
 				FB221E74275ABA3F000A446B /* PasswordViewController.swift in Sources */,
 				FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */,
 			);
