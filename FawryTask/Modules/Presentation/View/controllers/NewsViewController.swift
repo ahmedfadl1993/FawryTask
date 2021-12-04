@@ -64,4 +64,18 @@ extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footerView", for: indexPath)
+        
+        let activityView = UIActivityIndicatorView(style: .large)
+            activityView.center = CGPoint(x: footerView.frame.width / 2, y: footerView.frame.height / 2)
+            activityView.startAnimating()
+            footerView.addSubview(activityView)
+        
+        return footerView
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        viewModel.nextPage()
+    }
 }

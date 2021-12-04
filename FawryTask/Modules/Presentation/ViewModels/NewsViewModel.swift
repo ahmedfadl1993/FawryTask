@@ -7,7 +7,11 @@
 
 import Foundation
 
-class NewsViewModel {
+class NewsViewModel: PaginationViewModel {
+    
+    var pageIndex: Int = 1
+    var pageSize = 10
+    var shouldPaginate: Bool = false
     
     private(set) var totalNewsCount = Bindable<Int>(0)
     private(set) var newsData = Bindable<[NewsModel]>([])
@@ -18,8 +22,14 @@ class NewsViewModel {
         self.repoistory = repoistory
     }
     
-    func getNews() {
-        repoistory.getNews(page: 1, size: 10) { [weak self] result in
+    func getNews(atPage: PageIndex = .first) {
+        
+        if atPage == .first {
+            pageIndex = 1
+        }else {
+            pageIndex += 1
+        }
+        repoistory.getNews(page: pageIndex, size: pageSize) { [weak self] result in
             guard let self = self else {
                 return
             }
@@ -31,4 +41,9 @@ class NewsViewModel {
             print("error message ")
         }
     }
+
+    func nextPage() {
+        getNews(atPage: .next)
+    }
+    
 }
