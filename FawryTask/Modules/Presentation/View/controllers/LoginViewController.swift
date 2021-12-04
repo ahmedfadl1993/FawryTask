@@ -24,28 +24,9 @@ class LoginViewController: UIViewController {
 
     }
 
-//    @IBAction func emailTextFieldDidChange(_ sender: UITextField) {
-//
-//    }
-
     @IBAction func didPressSignupButton(_ sender: UIButton) {
         let regViewController = RegistrationViewController()
         self.navigationController?.pushViewController(regViewController, animated: true)
     }
     
-    @IBAction func showHidePasswordButtonAction(sender: UIButton) {
-        passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
-        sender.isSelected = !passwordTextField.isSecureTextEntry
-    }
-}
-
-
-class SigninModel {
-    var email: String = ""
-    var password: String = ""
-    convenience init(email: String, password: String) {
-        self.init()
-        self.email = email
-        self.password = password
-    }
 }

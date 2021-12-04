@@ -19,10 +19,8 @@
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
 		FB221E50275A88C0000A446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221E4F275A88C0000A446B /* Assets.xcassets */; };
 		FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E51275A88C0000A446B /* LaunchScreen.storyboard */; };
-		FB221E6C275AB112000A446B /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB221E6B275AB112000A446B /* PasswordViewController.xib */; };
 		FB221E6E275AB576000A446B /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB221E6D275AB576000A446B /* RegistrationViewController.xib */; };
 		FB221E70275AB614000A446B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E6F275AB614000A446B /* LoginViewController.swift */; };
-		FB221E74275ABA3F000A446B /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E73275ABA3F000A446B /* PasswordViewController.swift */; };
 		FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */; };
 		FB2B3FF5275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */; };
 		FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3CC275ABFCE00719757 /* AppController.swift */; };
@@ -50,10 +48,8 @@
 		FB221E4F275A88C0000A446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB221E52275A88C0000A446B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB221E54275A88C0000A446B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB221E6B275AB112000A446B /* PasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
 		FB221E6D275AB576000A446B /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		FB221E6F275AB614000A446B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FB221E73275ABA3F000A446B /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineRegisrtaionRepoistory.swift; sourceTree = "<group>"; };
 		FB43A3CC275ABFCE00719757 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
@@ -191,9 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				FB43A3F5275ADF1C00719757 /* Main.storyboard */,
-				FB221E60275AB022000A446B /* cells */,
-				FB221E5F275AB014000A446B /* nibs */,
+				FB2B3FF6275B994B009F71AE /* cells */,
 				FB221E5C275AAFBF000A446B /* controllers */,
+				FB221E5F275AB014000A446B /* nibs */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				FB221E6F275AB614000A446B /* LoginViewController.swift */,
-				FB221E73275ABA3F000A446B /* PasswordViewController.swift */,
 				FB0D9195275B5E1F00BF62E5 /* RegistrationViewController.swift */,
 			);
 			path = controllers;
@@ -220,17 +215,9 @@
 		FB221E5F275AB014000A446B /* nibs */ = {
 			isa = PBXGroup;
 			children = (
-				FB221E6B275AB112000A446B /* PasswordViewController.xib */,
 				FB221E6D275AB576000A446B /* RegistrationViewController.xib */,
 			);
 			path = nibs;
-			sourceTree = "<group>";
-		};
-		FB221E60275AB022000A446B /* cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = cells;
 			sourceTree = "<group>";
 		};
 		FB2B3FF2275B978A009F71AE /* Data */ = {
@@ -247,6 +234,13 @@
 				FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		FB2B3FF6275B994B009F71AE /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		FB43A406275B50D600719757 /* App */ = {
@@ -331,7 +325,6 @@
 			files = (
 				FB221E6E275AB576000A446B /* RegistrationViewController.xib in Resources */,
 				FB43A3F6275ADF1C00719757 /* Main.storyboard in Resources */,
-				FB221E6C275AB112000A446B /* PasswordViewController.xib in Resources */,
 				FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */,
 				FB221E50275A88C0000A446B /* Assets.xcassets in Resources */,
 			);
@@ -385,7 +378,6 @@
 				FB43A402275B4F2100719757 /* Bindables.swift in Sources */,
 				FB0D919F275B646200BF62E5 /* Person.swift in Sources */,
 				FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */,
-				FB221E74275ABA3F000A446B /* PasswordViewController.swift in Sources */,
 				FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
