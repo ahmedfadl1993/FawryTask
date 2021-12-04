@@ -11,12 +11,14 @@ class APIFetcher {
     static let instance = APIFetcher()
     typealias apiSuccess = (_ result: Data?) -> Void
     typealias apiFailure = (_ error: ErrorResponse?) -> Void
-    
+    private init () {}
     func request(request: BaseRequestProtocol,
                  onSuccess successCallback: @escaping apiSuccess,
                  onFailure failureCallback: @escaping apiFailure) {
         
-        AF.request(request.url, method: request.method, parameters: request.parameters, encoding: JSONEncoding.default, headers: request.headers).validate().responseData { response in
+        let params = request.parameters
+        
+        AF.request(request.url, method: request.method, parameters: (params?.isEmpty ?? true) ? nil : params , encoding: JSONEncoding.default, headers: nil).validate().responseData { response in
             switch response.result {
             case .success(let value):
                 successCallback(value)

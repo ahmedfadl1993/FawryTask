@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class PicsRequest: BaseRequestProtocol {
     
@@ -21,4 +22,9 @@ class PicsRequest: BaseRequestProtocol {
     var url: String {
         return APIs.News.getNews(page: self.page, size: pageSize)
     }
+    
+    var method: HTTPMethod {
+        return .get
+    }
+    
 }

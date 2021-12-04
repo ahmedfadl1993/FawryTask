@@ -24,7 +24,10 @@ class LoginViewController: BaseViewController {
     
     // MARK: - Actions
     @IBAction func didPressLoginButton(_ sender: UIButton) {
-        viewModel.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "")
+//        viewModel.login(email: emailTextField.text ?? "" , password: passwordTextField.text ?? "")
+        
+        let newViewController = NewsViewController()
+        self.present(newViewController, animated: true, completion: nil)
     }
     
     @IBAction func didPressSignupButton(_ sender: UIButton) {

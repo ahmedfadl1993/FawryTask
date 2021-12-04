@@ -13,13 +13,13 @@ public protocol BaseRequestProtocol {
     var url: String { get }
     var method: HTTPMethod { get }
     var headers: HTTPHeaders { get }
-    var parameters: Parameters { get }
+    var parameters: Parameters? { get }
 }
 
 extension BaseRequestProtocol {
     var method: HTTPMethod { return .get }
     var headers: HTTPHeaders { return [:] }
-    var parameters: Parameters { return [:] }
+    var parameters: Parameters? { return [:] }
 }
 
 /// Use this BaseRequest to create basic get request with only custom URL

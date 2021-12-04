@@ -13,7 +13,7 @@ class APIs {
 
     struct News {
         static func getNews(page: Int, size: Int) -> String {
-            return baseUrl + "/list?page=\(page)&limit=\(size)"
+            return baseUrl + "list?page=\(page)&limit=\(size)"
         }
     }
     

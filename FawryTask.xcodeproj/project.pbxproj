@@ -16,6 +16,9 @@
 		FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91AD275B66D300BF62E5 /* JSONDecoder+Extension.swift */; };
 		FB0D91C6275B77B000BF62E5 /* RegisrtaionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */; };
 		FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C7275B784900BF62E5 /* RepositoryTypealias.swift */; };
+		FB0E6B7B275BD7A000586407 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B7A275BD7A000586407 /* NewsViewModel.swift */; };
+		FB0E6B7D275BD84400586407 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0E6B7C275BD84400586407 /* NewsViewController.xib */; };
+		FB0E6B7F275BD85200586407 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B7E275BD85200586407 /* NewsViewController.swift */; };
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
 		FB221E50275A88C0000A446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221E4F275A88C0000A446B /* Assets.xcassets */; };
 		FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E51275A88C0000A446B /* LaunchScreen.storyboard */; };
@@ -30,8 +33,8 @@
 		FB43A402275B4F2100719757 /* Bindables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A401275B4F2100719757 /* Bindables.swift */; };
 		FB43A404275B501F00719757 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A403275B501F00719757 /* Validatable.swift */; };
 		FB83F77E275BB5ED00CCA61C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */; };
-		FB9A0304275BD21F00D508A8 /* PicsImagesRepoisotry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0303275BD21F00D508A8 /* PicsImagesRepoisotry.swift */; };
-		FB9A0306275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0305275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift */; };
+		FB9A0304275BD21F00D508A8 /* NewsRepoisotry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0303275BD21F00D508A8 /* NewsRepoisotry.swift */; };
+		FB9A0306275BD24000D508A8 /* NewsRepoisotryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0305275BD24000D508A8 /* NewsRepoisotryProtocol.swift */; };
 		FB9A0309275BD30E00D508A8 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A0308275BD30E00D508A8 /* NewsModel.swift */; };
 		FBCD7F24275B9FCF00A97E83 /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */; };
 		FBCD7F26275BA01400A97E83 /* OfflineLoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */; };
@@ -54,6 +57,9 @@
 		FB0D91AD275B66D300BF62E5 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisrtaionProtocol.swift; sourceTree = "<group>"; };
 		FB0D91C7275B784900BF62E5 /* RepositoryTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTypealias.swift; sourceTree = "<group>"; };
+		FB0E6B7A275BD7A000586407 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		FB0E6B7C275BD84400586407 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		FB0E6B7E275BD85200586407 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		FB221E40275A88BF000A446B /* FawryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FawryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221E43275A88BF000A446B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB221E4F275A88C0000A446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,8 +76,8 @@
 		FB43A401275B4F2100719757 /* Bindables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindables.swift; sourceTree = "<group>"; };
 		FB43A403275B501F00719757 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		FB9A0303275BD21F00D508A8 /* PicsImagesRepoisotry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsImagesRepoisotry.swift; sourceTree = "<group>"; };
-		FB9A0305275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsImagesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FB9A0303275BD21F00D508A8 /* NewsRepoisotry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepoisotry.swift; sourceTree = "<group>"; };
+		FB9A0305275BD24000D508A8 /* NewsRepoisotryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepoisotryProtocol.swift; sourceTree = "<group>"; };
 		FB9A0308275BD30E00D508A8 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLoginRepository.swift; sourceTree = "<group>"; };
@@ -171,7 +177,7 @@
 			children = (
 				FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */,
 				FBCD7F23275B9FCF00A97E83 /* LoginRepositoryProtocol.swift */,
-				FB9A0305275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift */,
+				FB9A0305275BD24000D508A8 /* NewsRepoisotryProtocol.swift */,
 			);
 			path = RepoistoryProtocol;
 			sourceTree = "<group>";
@@ -211,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				FB43A3F5275ADF1C00719757 /* Main.storyboard */,
-				FB2B3FF6275B994B009F71AE /* cells */,
 				FB221E5C275AAFBF000A446B /* controllers */,
 				FB221E5F275AB014000A446B /* nibs */,
 			);
@@ -224,6 +229,7 @@
 				FB221E6F275AB614000A446B /* LoginViewController.swift */,
 				FB0D9195275B5E1F00BF62E5 /* RegistrationViewController.swift */,
 				FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */,
+				FB0E6B7E275BD85200586407 /* NewsViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			children = (
 				FB43A3FF275B4D2300719757 /* LoginViewModel.swift */,
 				FB0D9197275B609900BF62E5 /* RegistrationViewModel.swift */,
+				FB0E6B7A275BD7A000586407 /* NewsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -241,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				FB221E6D275AB576000A446B /* RegistrationViewController.xib */,
+				FB0E6B7C275BD84400586407 /* NewsViewController.xib */,
 			);
 			path = nibs;
 			sourceTree = "<group>";
@@ -260,16 +268,9 @@
 			children = (
 				FB2B3FF4275B97DA009F71AE /* OfflineRegisrtaionRepoistory.swift */,
 				FBCD7F25275BA01400A97E83 /* OfflineLoginRepository.swift */,
-				FB9A0303275BD21F00D508A8 /* PicsImagesRepoisotry.swift */,
+				FB9A0303275BD21F00D508A8 /* NewsRepoisotry.swift */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		FB2B3FF6275B994B009F71AE /* cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = cells;
 			sourceTree = "<group>";
 		};
 		FB43A406275B50D600719757 /* App */ = {
@@ -391,6 +392,7 @@
 			files = (
 				FB221E6E275AB576000A446B /* RegistrationViewController.xib in Resources */,
 				FB43A3F6275ADF1C00719757 /* Main.storyboard in Resources */,
+				FB0E6B7D275BD84400586407 /* NewsViewController.xib in Resources */,
 				FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */,
 				FB221E50275A88C0000A446B /* Assets.xcassets in Resources */,
 			);
@@ -448,12 +450,14 @@
 				FB9A0309275BD30E00D508A8 /* NewsModel.swift in Sources */,
 				FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */,
 				FBDC4743275BBCFA00589946 /* APIs.swift in Sources */,
-				FB9A0304275BD21F00D508A8 /* PicsImagesRepoisotry.swift in Sources */,
+				FB0E6B7F275BD85200586407 /* NewsViewController.swift in Sources */,
+				FB9A0304275BD21F00D508A8 /* NewsRepoisotry.swift in Sources */,
 				FBDC474D275BBD2100589946 /* APIFetcher.swift in Sources */,
 				FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */,
 				FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */,
 				FBDC4759275BC99200589946 /* ErrorResponseModel.swift in Sources */,
 				FBCD7F24275B9FCF00A97E83 /* LoginRepositoryProtocol.swift in Sources */,
+				FB0E6B7B275BD7A000586407 /* NewsViewModel.swift in Sources */,
 				FB0D9198275B609900BF62E5 /* RegistrationViewModel.swift in Sources */,
 				FB83F77E275BB5ED00CCA61C /* BaseViewController.swift in Sources */,
 				FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */,
@@ -471,7 +475,7 @@
 				FB0D919F275B646200BF62E5 /* Person.swift in Sources */,
 				FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */,
 				FBDC475B275BCEA700589946 /* PicsRequest.swift in Sources */,
-				FB9A0306275BD24000D508A8 /* PicsImagesRepositoryProtocol.swift in Sources */,
+				FB9A0306275BD24000D508A8 /* NewsRepoisotryProtocol.swift in Sources */,
 				FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
