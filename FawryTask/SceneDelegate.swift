@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  FawryTask
+//  FawryTASK
 //
-//  Created by Ahmed Fadl on 03/12/2021.
+//  Created by Ahmed Fadl on 04/12/2021.
 //
 
 import UIKit
@@ -47,7 +47,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 

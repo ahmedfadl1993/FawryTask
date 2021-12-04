@@ -7,25 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE12F4A5B7D27D6F16269B83 /* Pods_FawryTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F656F83BEE9F624106C604 /* Pods_FawryTask.framework */; };
+		FB0D9196275B5E1F00BF62E5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D9195275B5E1F00BF62E5 /* RegistrationViewController.swift */; };
+		FB0D9198275B609900BF62E5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D9197275B609900BF62E5 /* RegistrationViewModel.swift */; };
+		FB0D919B275B619100BF62E5 /* UserloginCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB0D9199275B619100BF62E5 /* UserloginCoreData.xcdatamodeld */; };
+		FB0D919F275B646200BF62E5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D919E275B646200BF62E5 /* Person.swift */; };
+		FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91AC275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift */; };
+		FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91AD275B66D300BF62E5 /* JSONDecoder+Extension.swift */; };
+		FB0D91C3275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C2275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift */; };
+		FB0D91C6275B77B000BF62E5 /* RegisrtaionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */; };
+		FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D91C7275B784900BF62E5 /* RepositoryTypealias.swift */; };
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
-		FB221E46275A88BF000A446B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E45275A88BF000A446B /* SceneDelegate.swift */; };
-		FB221E48275A88BF000A446B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E47275A88BF000A446B /* ViewController.swift */; };
-		FB221E4B275A88BF000A446B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E49275A88BF000A446B /* Main.storyboard */; };
-		FB221E4E275A88BF000A446B /* FawryTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB221E4C275A88BF000A446B /* FawryTask.xcdatamodeld */; };
 		FB221E50275A88C0000A446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221E4F275A88C0000A446B /* Assets.xcassets */; };
 		FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E51275A88C0000A446B /* LaunchScreen.storyboard */; };
+		FB221E6C275AB112000A446B /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB221E6B275AB112000A446B /* PasswordViewController.xib */; };
+		FB221E6E275AB576000A446B /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB221E6D275AB576000A446B /* RegistrationViewController.xib */; };
+		FB221E70275AB614000A446B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E6F275AB614000A446B /* LoginViewController.swift */; };
+		FB221E74275ABA3F000A446B /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E73275ABA3F000A446B /* PasswordViewController.swift */; };
+		FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */; };
+		FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3CC275ABFCE00719757 /* AppController.swift */; };
+		FB43A3F6275ADF1C00719757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB43A3F5275ADF1C00719757 /* Main.storyboard */; };
+		FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3FD275AE11B00719757 /* SceneDelegate.swift */; };
+		FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A3FF275B4D2300719757 /* LoginViewModel.swift */; };
+		FB43A402275B4F2100719757 /* Bindables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A401275B4F2100719757 /* Bindables.swift */; };
+		FB43A404275B501F00719757 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43A403275B501F00719757 /* Validatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		155EE7C2EA2BC5F02711E61F /* Pods-FawryTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FawryTask.debug.xcconfig"; path = "Target Support Files/Pods-FawryTask/Pods-FawryTask.debug.xcconfig"; sourceTree = "<group>"; };
+		260C739DEB362147FBBD1832 /* Pods-FawryTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FawryTask.release.xcconfig"; path = "Target Support Files/Pods-FawryTask/Pods-FawryTask.release.xcconfig"; sourceTree = "<group>"; };
+		E4F656F83BEE9F624106C604 /* Pods_FawryTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FawryTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0D9195275B5E1F00BF62E5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FB0D9197275B609900BF62E5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		FB0D919A275B619100BF62E5 /* UserloginCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserloginCoreData.xcdatamodel; sourceTree = "<group>"; };
+		FB0D919E275B646200BF62E5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FB0D91AC275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Extension.swift"; sourceTree = "<group>"; };
+		FB0D91AD275B66D300BF62E5 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
+		FB0D91C2275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineRegisrtaionRepoistory.swift; sourceTree = "<group>"; };
+		FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisrtaionProtocol.swift; sourceTree = "<group>"; };
+		FB0D91C7275B784900BF62E5 /* RepositoryTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTypealias.swift; sourceTree = "<group>"; };
 		FB221E40275A88BF000A446B /* FawryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FawryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221E43275A88BF000A446B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB221E45275A88BF000A446B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB221E47275A88BF000A446B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB221E4A275A88BF000A446B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB221E4D275A88BF000A446B /* FawryTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FawryTask.xcdatamodel; sourceTree = "<group>"; };
 		FB221E4F275A88C0000A446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB221E52275A88C0000A446B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB221E54275A88C0000A446B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB221E6B275AB112000A446B /* PasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
+		FB221E6D275AB576000A446B /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		FB221E6F275AB614000A446B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB221E73275ABA3F000A446B /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FB43A3CC275ABFCE00719757 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		FB43A3F5275ADF1C00719757 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FB43A3FD275AE11B00719757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB43A3FF275B4D2300719757 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FB43A401275B4F2100719757 /* Bindables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindables.swift; sourceTree = "<group>"; };
+		FB43A403275B501F00719757 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +69,117 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE12F4A5B7D27D6F16269B83 /* Pods_FawryTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		249C81AA8D37E0257B277322 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				155EE7C2EA2BC5F02711E61F /* Pods-FawryTask.debug.xcconfig */,
+				260C739DEB362147FBBD1832 /* Pods-FawryTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71D2A0CB15B7EF70A6F0C01B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4F656F83BEE9F624106C604 /* Pods_FawryTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB0D91A0275B65BE00BF62E5 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D91BB275B670300BF62E5 /* ManagedObjects */,
+				FB0D91BA275B66F000BF62E5 /* Extension */,
+				FB2B3FF0275B8A6A009F71AE /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		FB0D91BA275B66F000BF62E5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D91AC275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift */,
+				FB0D91AD275B66D300BF62E5 /* JSONDecoder+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FB0D91BB275B670300BF62E5 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D919E275B646200BF62E5 /* Person.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		FB0D91BD275B760C00BF62E5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D91C0275B761F00BF62E5 /* Presentation */,
+				FB0D91BF275B761900BF62E5 /* Domain */,
+				FB0D91BE275B761500BF62E5 /* Data */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FB0D91BE275B761500BF62E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D91C1275B764F00BF62E5 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB0D91BF275B761900BF62E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D91C4275B778A00BF62E5 /* RepoistoryProtocol */,
+				FB0D91C7275B784900BF62E5 /* RepositoryTypealias.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FB0D91C0275B761F00BF62E5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FB221E5E275AB000000A446B /* ViewModels */,
+				FB221E5B275AAFB0000A446B /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FB0D91C1275B764F00BF62E5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D91C2275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FB0D91C4275B778A00BF62E5 /* RepoistoryProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D91C5275B77B000BF62E5 /* RegisrtaionProtocol.swift */,
+			);
+			path = RepoistoryProtocol;
+			sourceTree = "<group>";
+		};
 		FB221E37275A88BF000A446B = {
 			isa = PBXGroup;
 			children = (
+				FB43A3CC275ABFCE00719757 /* AppController.swift */,
 				FB221E42275A88BF000A446B /* FawryTask */,
 				FB221E41275A88BF000A446B /* Products */,
+				249C81AA8D37E0257B277322 /* Pods */,
+				71D2A0CB15B7EF70A6F0C01B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +194,80 @@
 		FB221E42275A88BF000A446B /* FawryTask */ = {
 			isa = PBXGroup;
 			children = (
-				FB221E43275A88BF000A446B /* AppDelegate.swift */,
-				FB221E45275A88BF000A446B /* SceneDelegate.swift */,
-				FB221E47275A88BF000A446B /* ViewController.swift */,
-				FB221E49275A88BF000A446B /* Main.storyboard */,
-				FB221E4F275A88C0000A446B /* Assets.xcassets */,
-				FB221E51275A88C0000A446B /* LaunchScreen.storyboard */,
-				FB221E54275A88C0000A446B /* Info.plist */,
-				FB221E4C275A88BF000A446B /* FawryTask.xcdatamodeld */,
+				FB0D9199275B619100BF62E5 /* UserloginCoreData.xcdatamodeld */,
+				FB0D91BD275B760C00BF62E5 /* Modules */,
+				FB0D91A0275B65BE00BF62E5 /* CoreDataManager */,
+				FB43A407275B50E700719757 /* Helpers */,
+				FB43A406275B50D600719757 /* App */,
 			);
 			path = FawryTask;
+			sourceTree = "<group>";
+		};
+		FB221E5B275AAFB0000A446B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB43A3F5275ADF1C00719757 /* Main.storyboard */,
+				FB221E60275AB022000A446B /* cells */,
+				FB221E5F275AB014000A446B /* nibs */,
+				FB221E5C275AAFBF000A446B /* controllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB221E5C275AAFBF000A446B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB221E6F275AB614000A446B /* LoginViewController.swift */,
+				FB221E73275ABA3F000A446B /* PasswordViewController.swift */,
+				FB0D9195275B5E1F00BF62E5 /* RegistrationViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		FB221E5E275AB000000A446B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB43A3FF275B4D2300719757 /* LoginViewModel.swift */,
+				FB0D9197275B609900BF62E5 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FB221E5F275AB014000A446B /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				FB221E6B275AB112000A446B /* PasswordViewController.xib */,
+				FB221E6D275AB576000A446B /* RegistrationViewController.xib */,
+			);
+			path = nibs;
+			sourceTree = "<group>";
+		};
+		FB221E60275AB022000A446B /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		FB43A406275B50D600719757 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FB221E43275A88BF000A446B /* AppDelegate.swift */,
+				FB43A3FD275AE11B00719757 /* SceneDelegate.swift */,
+				FB221E51275A88C0000A446B /* LaunchScreen.storyboard */,
+				FB221E54275A88C0000A446B /* Info.plist */,
+				FB221E4F275A88C0000A446B /* Assets.xcassets */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		FB43A407275B50E700719757 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FB43A401275B4F2100719757 /* Bindables.swift */,
+				FB43A403275B501F00719757 /* Validatable.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB221E57275A88C0000A446B /* Build configuration list for PBXNativeTarget "FawryTask" */;
 			buildPhases = (
+				C71BD6377A2CF656525BE077 /* [CP] Check Pods Manifest.lock */,
 				FB221E3C275A88BF000A446B /* Sources */,
 				FB221E3D275A88BF000A446B /* Frameworks */,
 				FB221E3E275A88BF000A446B /* Resources */,
@@ -128,37 +329,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB221E6E275AB576000A446B /* RegistrationViewController.xib in Resources */,
+				FB43A3F6275ADF1C00719757 /* Main.storyboard in Resources */,
+				FB221E6C275AB112000A446B /* PasswordViewController.xib in Resources */,
 				FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */,
 				FB221E50275A88C0000A446B /* Assets.xcassets in Resources */,
-				FB221E4B275A88BF000A446B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C71BD6377A2CF656525BE077 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FawryTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB221E3C275A88BF000A446B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB221E48275A88BF000A446B /* ViewController.swift in Sources */,
+				FB0D91AF275B66D300BF62E5 /* JSONDecoder+Extension.swift in Sources */,
+				FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */,
+				FB0D91C8275B784900BF62E5 /* RepositoryTypealias.swift in Sources */,
+				FB0D9198275B609900BF62E5 /* RegistrationViewModel.swift in Sources */,
 				FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */,
-				FB221E4E275A88BF000A446B /* FawryTask.xcdatamodeld in Sources */,
-				FB221E46275A88BF000A446B /* SceneDelegate.swift in Sources */,
+				FB43A400275B4D2300719757 /* LoginViewModel.swift in Sources */,
+				FB2B3FF1275B8A6A009F71AE /* CoreDataManager.swift in Sources */,
+				FB0D919B275B619100BF62E5 /* UserloginCoreData.xcdatamodeld in Sources */,
+				FB0D91C6275B77B000BF62E5 /* RegisrtaionProtocol.swift in Sources */,
+				FB0D9196275B5E1F00BF62E5 /* RegistrationViewController.swift in Sources */,
+				FB43A404275B501F00719757 /* Validatable.swift in Sources */,
+				FB221E70275AB614000A446B /* LoginViewController.swift in Sources */,
+				FB43A402275B4F2100719757 /* Bindables.swift in Sources */,
+				FB0D919F275B646200BF62E5 /* Person.swift in Sources */,
+				FB0D91AE275B66D300BF62E5 /* CodingUserInfoKey+Extension.swift in Sources */,
+				FB0D91C3275B772E00BF62E5 /* OfflineRegisrtaionRepoistory.swift in Sources */,
+				FB221E74275ABA3F000A446B /* PasswordViewController.swift in Sources */,
+				FB43A3CD275ABFCE00719757 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB221E49275A88BF000A446B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB221E4A275A88BF000A446B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB221E51275A88C0000A446B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +522,7 @@
 		};
 		FB221E58275A88C0000A446B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155EE7C2EA2BC5F02711E61F /* Pods-FawryTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +534,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +552,7 @@
 		};
 		FB221E59275A88C0000A446B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 260C739DEB362147FBBD1832 /* Pods-FawryTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +564,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -366,13 +604,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FB221E4C275A88BF000A446B /* FawryTask.xcdatamodeld */ = {
+		FB0D9199275B619100BF62E5 /* UserloginCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FB221E4D275A88BF000A446B /* FawryTask.xcdatamodel */,
+				FB0D919A275B619100BF62E5 /* UserloginCoreData.xcdatamodel */,
 			);
-			currentVersion = FB221E4D275A88BF000A446B /* FawryTask.xcdatamodel */;
-			path = FawryTask.xcdatamodeld;
+			currentVersion = FB0D919A275B619100BF62E5 /* UserloginCoreData.xcdatamodel */;
+			path = UserloginCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
