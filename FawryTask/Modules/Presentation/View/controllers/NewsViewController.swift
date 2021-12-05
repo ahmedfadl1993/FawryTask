@@ -68,7 +68,11 @@ extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let detailsModel = viewModel.newsData.value[indexPath.row]
+        if !detailsModel.downloadURL.isEmpty {
+            let detailsViewController = DetailsViewController(newsModel: viewModel.newsData.value[indexPath.row])
+            self.present(detailsViewController, animated: true, completion: nil)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -83,6 +87,6 @@ extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        viewModel.nextPage()
+        viewModel.nextPage(index: indexPath.row)
     }
 }

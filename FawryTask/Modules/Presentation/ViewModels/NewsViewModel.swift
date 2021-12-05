@@ -42,8 +42,10 @@ class NewsViewModel: PaginationViewModel {
         }
     }
 
-    func nextPage() {
-        getNews(atPage: .next)
+    func nextPage(index: Int) {
+        if index == self.totalNewsCount.value - 1 {
+            getNews(atPage: .next)
+        }
     }
     
 }

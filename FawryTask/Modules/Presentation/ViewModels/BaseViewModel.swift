@@ -12,5 +12,5 @@ protocol BaseViewModel {}
 protocol PaginationViewModel: BaseViewModel {
     var pageIndex: Int { get }
     var shouldPaginate: Bool {get}
-    func nextPage()
+    func nextPage(index: Int)
 }

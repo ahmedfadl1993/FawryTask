@@ -20,7 +20,6 @@ class NewsCollectionViewCell: UICollectionViewCell {
     
     func config(model: NewsModel) {
         
-        authorImage.kf.indicatorType = .activity
         author.text = model.author
         guard let imageURL = URL(string: model.downloadURL) else {
             authorImage.image = UIImage(named: "placeholder_large")
@@ -35,7 +34,7 @@ class NewsCollectionViewCell: UICollectionViewCell {
                 .processor(processor),
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(1)),
-                .cacheMemoryOnly
+                .cacheOriginalImage
             ])
 
     }

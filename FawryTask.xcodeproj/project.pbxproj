@@ -27,6 +27,8 @@
 		FB0E6B93275BFC9000586407 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B92275BFC9000586407 /* BaseViewModel.swift */; };
 		FB0E6B97275C038D00586407 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B96275C038D00586407 /* UserDefaults+Extensions.swift */; };
 		FB0E6B9A275C0ABF00586407 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B99275C0ABF00586407 /* Alertable.swift */; };
+		FB0E6B9C275C65E200586407 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0E6B9B275C65E200586407 /* DetailsViewController.xib */; };
+		FB0E6B9E275C66E000586407 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E6B9D275C66E000586407 /* DetailsViewController.swift */; };
 		FB221E44275A88BF000A446B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221E43275A88BF000A446B /* AppDelegate.swift */; };
 		FB221E50275A88C0000A446B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221E4F275A88C0000A446B /* Assets.xcassets */; };
 		FB221E53275A88C0000A446B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221E51275A88C0000A446B /* LaunchScreen.storyboard */; };
@@ -75,6 +77,8 @@
 		FB0E6B92275BFC9000586407 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		FB0E6B96275C038D00586407 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		FB0E6B99275C0ABF00586407 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		FB0E6B9B275C65E200586407 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		FB0E6B9D275C66E000586407 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		FB221E40275A88BF000A446B /* FawryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FawryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221E43275A88BF000A446B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB221E4F275A88C0000A446B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 				FB0D9195275B5E1F00BF62E5 /* RegistrationViewController.swift */,
 				FB83F77D275BB5ED00CCA61C /* BaseViewController.swift */,
 				FB0E6B7E275BD85200586407 /* NewsViewController.swift */,
+				FB0E6B9D275C66E000586407 /* DetailsViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			children = (
 				FB221E6D275AB576000A446B /* RegistrationViewController.xib */,
 				FB0E6B7C275BD84400586407 /* NewsViewController.xib */,
+				FB0E6B9B275C65E200586407 /* DetailsViewController.xib */,
 			);
 			path = nibs;
 			sourceTree = "<group>";
@@ -435,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0E6B9C275C65E200586407 /* DetailsViewController.xib in Resources */,
 				FB221E6E275AB576000A446B /* RegistrationViewController.xib in Resources */,
 				FB43A3F6275ADF1C00719757 /* Main.storyboard in Resources */,
 				FB0E6B7D275BD84400586407 /* NewsViewController.xib in Resources */,
@@ -501,6 +508,7 @@
 				FB0E6B93275BFC9000586407 /* BaseViewModel.swift in Sources */,
 				FB0E6B8F275BFB2E00586407 /* PageIndex.swift in Sources */,
 				FB9A0304275BD21F00D508A8 /* NewsRepoisotry.swift in Sources */,
+				FB0E6B9E275C66E000586407 /* DetailsViewController.swift in Sources */,
 				FBDC474D275BBD2100589946 /* APIFetcher.swift in Sources */,
 				FB43A3FE275AE11B00719757 /* SceneDelegate.swift in Sources */,
 				FB0E6B97275C038D00586407 /* UserDefaults+Extensions.swift in Sources */,
